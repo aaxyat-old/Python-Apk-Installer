@@ -1,4 +1,4 @@
-#Python Apk Installer
+# Python Apk Installer
 This is a simple python script to install APK Files in given directory to your android phone
 ### Requirements
 * ADB
