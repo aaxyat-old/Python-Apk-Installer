@@ -1,4 +1,4 @@
-from os import listdir, chdir
+from os import listdir, chdir, rename
 import subprocess
 from os.path import isfile, join
 
@@ -14,4 +14,7 @@ chdir(path)
 
 
 for items in apk_path(path):
+    old_name = items
+    rename(items, "test.apk")
     subprocess.call(f"adb install {items}", shell=True)
+    rename("test.apk", old_name)
