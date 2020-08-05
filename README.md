@@ -16,9 +16,10 @@ Put all your apk files in /home/[User]/Downloads/Apks. Make sure your apk files 
 - [ ] Add an interactive interface to choose the folder containing apks.
 - [ ] Test for bugs.
 - [X] Remove the need for end user to touch the script at all. :heavy_check_mark:
+- [ ] Error Handling.
 
 ### Known Bug:
-If you try installing apk with special charaters and any non English character the program will break. (Fixed)
+~~If you try installing apk with special charaters and any non English character the program will break.~~ (Fixed)
 
 ## Bug report:
  #### If you came across any bug, please report them as issues. Any pull request will be greatly appriciated.
