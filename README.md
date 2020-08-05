@@ -17,5 +17,8 @@ Put all your apk files in /home/[User]/Downloads/Apks. Make sure your apk files 
 - [ ] Test for bugs
 - [ ] Remove the need for end user to touch the script at all
 
+### Known Bug:
+If you try installing apk with special charaters and any non English character the program will break
+
 ## Bug report:
  #### If you came across any bug, please report them as issues. Any pull request will be greatly appriciated
