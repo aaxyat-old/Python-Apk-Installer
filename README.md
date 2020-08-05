@@ -13,8 +13,8 @@ Put all your apk files in /home/[User]/Downloads/Apks. Make sure your apk files 
   
 ### Todo List:
 - [X] Add Windows Support (a littly dodgy). :heavy_check_mark:
-- [ ] Add an interactive interface to choose the folder containing apks.
-- [ ] Test for bugs.
+- [X] Add an interactive interface to choose the folder containing apks. :heavy_check_mark:
+- [X] Test for bugs. :heavy_check_mark:
 - [X] Remove the need for end user to touch the script at all. :heavy_check_mark:
 - [ ] Error Handling.
 
