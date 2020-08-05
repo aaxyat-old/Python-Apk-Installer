@@ -12,10 +12,10 @@ Put all your apk files in /home/[User]/Downloads/Apks. Make sure your apk files 
 * Currently it is too buggy. I haven't tested it extensively.
   
 ### Todo List:
-- [X] Add Windows Support (a littly dodgy).
+- [X] Add Windows Support (a littly dodgy). :heavy_check_mark:
 - [ ] Add an interactive interface to choose the folder containing apks.
 - [ ] Test for bugs.
-- [X] Remove the need for end user to touch the script at all.
+- [X] Remove the need for end user to touch the script at all. :heavy_check_mark:
 
 ### Known Bug:
 If you try installing apk with special charaters and any non English character the program will break. (Fixed)
