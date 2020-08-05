@@ -28,3 +28,4 @@ for items in apk_path(path):
     os.rename(items, "test.apk")
     subprocess.call(f"adb install test.apk", shell=True)
     os.rename("test.apk", old_name)
+    counter += 1
