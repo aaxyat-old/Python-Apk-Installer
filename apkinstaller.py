@@ -8,20 +8,26 @@ def cls():
 
 
 def apk_path(path):
-    apks = [f for f in os.listdir(
+    apk = [f for f in os.listdir(
         path) if isfile(join(path, f))]
-    return apks
+    return apk
 
 
 cls()
 path = input("please Enter the full path where your apk is located: ")
 os.chdir(path)
 
-no_of_apk = len(apk_path(path))
+apk_list = []
+for i in apk_path(path):
+    if ".apk" in i:
+        apk_list.append(i)
+
+
+no_of_apk = len(apk_list)
 counter = 1
 
 
-for items in apk_path(path):
+for items in apk_list:
     cls()
     print(f'Installing APK {counter} of {no_of_apk}')
     old_name = items
