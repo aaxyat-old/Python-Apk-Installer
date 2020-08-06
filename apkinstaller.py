@@ -1,7 +1,7 @@
 # Import of essential Modules
 import os
 import subprocess
-from os.path import isfile, join
+
 
 # function to clear the terminal screen: Works cross platform
 
@@ -14,7 +14,7 @@ def cls():
 
 def apk_path(path):
     apk = [f for f in os.listdir(
-        path) if isfile(join(path, f))]
+        path) if os.path.isfile(os.path.join(path, f))]
     return apk
 
 
