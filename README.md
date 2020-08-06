@@ -1,8 +1,8 @@
 # Python Apk Installer
 This is a simple python script to install APK Files in given directory to your android phone.
 ### Requirements
-* ADB
-* python
+* [ADB](https://developer.android.com/studio/releases/platform-tools)
+* [python](https://www.python.org)
 
 ### Installation:
 * Download python
@@ -22,10 +22,12 @@ This is a simple python script to install APK Files in given directory to your a
 - [X] Add an interactive interface to choose the folder containing APKs. :heavy_check_mark:
 - [X] Test for bugs. :heavy_check_mark:
 - [X] Remove the need for end user to touch the script at all. :heavy_check_mark:
-- [ ] Error Handling.
+- [X] Error Handling. :heavy_check_mark:
 
 ### Known Bug:
 ~~If you try installing apk with special characters and any non English character the program will break.~~ (Fixed)
 
 ## Bug report:
+ This script was only tested in Arch linux. I have no idea how this script functions in Mac or Windows.
  #### If you came across any bug, please report them as issues. Any pull request will be greatly appreciated.
+
