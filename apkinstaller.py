@@ -37,9 +37,10 @@ counter = 1
 
 for items in apk_list:
     cls()
-    print(f'Installing APK {counter} of {no_of_apk}')  # Makeshift progress bar
     old_name = items
     # This renames the current apk to test.apk as to make the installation easier
+    # Makeshift progress bar
+    print(f'Installing apk {old_name}: {counter} of {no_of_apk}')
     os.rename(items, "test.apk")
     # This installs the created test.apk to android
     subprocess.call("adb install test.apk", shell=True)
