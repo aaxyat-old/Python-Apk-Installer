@@ -10,8 +10,7 @@ This is a simple python script to install APK Files in given directory to your a
 * Download apkinstaller.py from [Release](https://github.com/aaxyat/Python-Apk-Installer/releases) or clone this repository with `git clone https://github.com/aaxyat/Python-Apk-Installer.git`
 * Download ADB and put apkinstaller.py in the directory containing ADB files.
 * Open your command terminal and navigate to the folder containing apkinstaller.py
-* run the command `python apkinstaller.py` (in linux use `python3 apkinstaller.py`)
-* input the directory where your APK files are located.
+* run the command `python apkinstaller.py <Path To APK Files>` (in linux use `python3 apkinstaller.py <Path To APK Files>`)
 
 ### Limitations:
 * ~~Currently this only works on linux~~ Added a botched windows implementation.
@@ -19,7 +18,7 @@ This is a simple python script to install APK Files in given directory to your a
 * ~~Currently it is too buggy. I haven't tested it extensively.~~ Removed as much bugs as I could find.
   
 ### Todo List:
-- [X] Add Windows Support (a little dodgy). :heavy_check_mark:
+- [X] Add Windows Support :heavy_check_mark:
 - [X] Add an interactive interface to choose the folder containing APKs. :heavy_check_mark:
 - [X] Test for bugs. :heavy_check_mark:
 - [X] Remove the need for end user to touch the script at all. :heavy_check_mark:
