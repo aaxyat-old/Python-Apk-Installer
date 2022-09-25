@@ -1,17 +1,17 @@
 # Import of essential Modules
 import os
 import subprocess
+import sys
+
+# Get the path from the user
 
 
-# function to clear the terminal screen: Works cross platform
-
-
+# function to clear the terminal screen: Works cross-platform
 def cls():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+
 # Function to get the array of names of all files in the user directory
-
-
 def apk_path(path):
     apk = [f for f in os.listdir(
         path) if os.path.isfile(os.path.join(path, f))]
@@ -20,7 +20,7 @@ def apk_path(path):
 
 # Gets the path of the folder containing all teh Apks To be installed
 cls()
-path = input("please Enter the full path where your apk is located: ")
+path = sys.argv[1]
 os.chdir(path)
 
 
@@ -30,17 +30,17 @@ for i in apk_path(path):
     if ".apk" in i:
         apk_list.append(i)
 
-# get the total number of APK and the initialize the counter
+# get the total number of APK and initialize the counter
 no_of_apk = len(apk_list)
 counter = 1
 
 
 for items in apk_list:
-    cls()
+    # cls()
     old_name = items
     # This renames the current apk to test.apk as to make the installation easier
     # Makeshift progress bar
-    print(f'Installing apk {old_name}: {counter} of {no_of_apk}')
+    print(f'Installing {old_name}.apk: {counter} of {no_of_apk}')
     os.rename(items, "test.apk")
     # This installs the created test.apk to android
     subprocess.call("adb install test.apk", shell=True)
