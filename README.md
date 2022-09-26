@@ -2,7 +2,7 @@
 This is a simple python script to install APK Files in given directory to your android phone.
 ### Requirements
 * [ADB](https://developer.android.com/studio/releases/platform-tools)
-* [Python](https://www.python.org)
+* [Python](https://www.python.org) (version 3.6 or higher)
 * An android phone with USB debugging enabled
 
 ### Installation:
