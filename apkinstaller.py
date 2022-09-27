@@ -1,4 +1,5 @@
 # Import of essential Modules
+from importlib.resources import path
 import os
 import subprocess
 import sys
@@ -20,7 +21,10 @@ def apk_path(path):
 
 # Gets the path of the folder containing all teh Apks To be installed
 cls()
-path = sys.argv[1]
+if len(sys.argv) != 2:
+    path = input("Please Enter the path of APK files")
+else:
+    path = sys.argv[1]
 os.chdir(path)
 
 
